@@ -55,3 +55,4 @@ Route::get('/contacts/{id}/destroy', [ContactController::class, 'destroy'])->nam
 
 
 });
+

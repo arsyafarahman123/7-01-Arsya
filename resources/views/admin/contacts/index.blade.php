@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Arsya| Data Contacts')
+@section('title','Prakerinoted| Data Contacts')
 @section('content')
 <div class="main-content">
                 <div class="section__content section__content--p30">
@@ -7,7 +7,7 @@
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">Data Contact Us</h2>
+                                    <h2 class="title-1">List Data PKL</h2>
                                 </div>
                             </div>
                         </div>
@@ -18,10 +18,10 @@
                                     <table class="table table-borderless table-data3">
                                         <thead>
                                             <tr>
-                                                <th>No</th>
-                                                <th>Nama</th>
-                                                <th>Email</th>
-                                                <th>Pesan</th>
+                                                <th></th>
+                                                <th>Nama Siswa</th>
+                                                <th>Add Perusahaan</th>
+                                                <th>Add Permission</th>
                                                 <th>Aksi</th>
                                             </tr>
                                         </thead>
