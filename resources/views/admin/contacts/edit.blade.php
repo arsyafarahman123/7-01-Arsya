@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title','Data PRAKERINOTED | Data Contacts')
+@section('title','Prakerinoted | Data Contacts')
 @section('content')
 <div class="main-content">
                 <div class="section__content section__content--p30">
@@ -8,7 +8,7 @@
                             <div class="col-lg-12">
                             <div class="card">
                                     <div class="card-header">
-                                        <strong>Form Edit Prakerinoted</strong> Data Siswa PKL
+                                        <strong>Form Edit</strong> Data Siswa Prakerinoted
                                     </div>
                                     <div class="card-body card-block">
                                         <form action="{{route ('contacts.update', $contact->id)}}" method="post" class="">
@@ -18,21 +18,16 @@
                                                 <input type="text" name="nama" class="form-control" value="{{ $contact->nama}}">
                                             </div>
                                             <div class="form-group">
-                                                <label for="nf-email" class=" form-control-label">Kelas</label>
+                                                <label for="nf-email" class=" form-control-label">Email</label>
                                                 <input type="email" name="email" class="form-control" value="{{ $contact->email}}">
                                             </div>
                                             <div class="form-group">
                                                 <label for="nf-password" class=" form-control-label">Nama Perusahaan</label>
                                                 <textarea name="pesan" class = "form-control">{{ $contact->pesan}}</textarea>
                                             </div>
-                                            <div class="form-group">
-                                                <label for="nf-password" class=" form-control-label">Daerah Tempat PKL</label>
-                                                <textarea name="pesan" class = "form-control">{{ $contact->pesan}}</textarea>
-                                            </div>
-                                            
                                             <div class="card-footer">
                                                 <button type="submit" class="btn btn-primary btn-sm">
-                                                    <i class="fa fa-dot-circle-o"></i> Submit Question
+                                                    <i class="fa fa-dot-circle-o"></i> Edit
                                                 </button>
                                             </div>
                                         </form>

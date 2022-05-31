@@ -1,13 +1,14 @@
 @extends('layouts.app')
-@section('title','Prakerinoted| Data Contacts')
+@section('title', 'Prakerinoted | Data Contacts')
 @section('content')
 <div class="main-content">
-                <div class="section__content section__content--p30">
+                <div class="section_content section_content--p30">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="overview-wrap">
-                                    <h2 class="title-1">List Data PKL</h2>
+                                    <h2 class="title-1">Data Contact Us Prakerinoted</h2>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -15,33 +16,33 @@
                             <div class="col-md-12">
                                 <!-- DATA TABLE-->
                                 <div class="table-responsive m-b-40">
+                                    
                                     <table class="table table-borderless table-data3">
                                         <thead>
                                             <tr>
-                                                <th></th>
+                                                <th>No</th>
                                                 <th>Nama Siswa</th>
-                                                <th>Add Perusahaan</th>
-                                                <th>Add Permission</th>
+                                                <th>Email</th>
+                                                <th>Tempat Perusahaan</th>
                                                 <th>Aksi</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             @foreach ($contacts as $index => $contact)
-                                            <tr> 
-                                                <td>{{ $index + 1}}</td>
+                                            <tr>
+                                                <td>{{ $index + 1 }}</td>
                                                 <td>{{ $contact->nama}}</td>
                                                 <td>{{ $contact->email}}</td>
                                                 <td>{{ $contact->pesan}}</td>
                                                 <td>
-                                                    <a href = "{{ route('contacts.edit', $contact->id)}}"><i class= "fas fa-edit"></i></a>
-                                                    |
-                                                    <a href = "{{ route('contacts.destroy', $contact->id)}}"><i class= "fas fa-trash" style="color:red"></i></a>
+                                                    <a href="{{ route('contacts.edit', $contact->id)}}"><i class="fas fa-edit"></i></a>
+                                                    <a href="{{ route('contacts.destroy', $contact->id)}}"><i class="fas fa-trash" style="color:red"></i></a>
                                                 </td>
+                                                
                                             </tr>
-                                            @endforeach  
+                                            @endforeach
                                             
-                                            
-                                            
+                                           
                                         </tbody>
                                     </table>
                                     {{ $contacts->links()}}
@@ -49,7 +50,6 @@
                                 <!-- END DATA TABLE-->
                             </div>
                         </div>
-                        
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="copyright">
